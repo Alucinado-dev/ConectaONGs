@@ -78,12 +78,16 @@ body{
   /* border: none; */
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", serif;
+  font-weight: 500;
+  font-style: normal;
+
 }
 
 nav{
   background-color: #ff5678;
   padding: 1em 1em 0.8em 1em;
-  display: grid;
+  /* display: grid; */
 }
 
 nav .content{ 
@@ -100,33 +104,60 @@ nav .portifolio{
   font-size: 2em;
   text-decoration: solid;
   font-weight: 600;
-
 }
 
 main{
   width: 100%;
-  height: 40vh;
+  /* height: 40vh; */
   text-align: center;
-  display: block;
-  justify-content: center;
+  /* justify-content: center; */
+  padding: 20px 10%;
+  background-color: darkkhaki;
 }
 
-main h1{
-  font-family: "Plus Jakarta Sans", serif;
-}
 
 main .explicacoes{
-  width: 80%;
-  margin-left: 10%;
+  width: 40%;
   border: 4px solid salmon;
+
+}
+
+main .explicacoes h2{
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 3em;
 }
 
 main .explicacoes p{
-  font-family: "Ubuntu", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.6em;
 }
+
+main .explicacoes .redes-ada{
+  border: 4px solid cornflowerblue;
+  display: inline;
+}
+
+main .explicacoes .redes-ada .icone-rede-ada{
+  /* display: inline; */
+  font-size: 1.6em;
+
+}
+
+main .explicacoes .redes-ada .icone-rede-ada img{
+  height: 3em;
+  width: 3em;
+  
+}
+
+
+
+
+
+
+
+
+
 
 /* #Entidades{
   display: inline;
