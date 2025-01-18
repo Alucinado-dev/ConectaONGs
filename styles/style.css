@@ -70,7 +70,7 @@
 
 /*                                       Estilização da página                                                                               */
 :root{
- font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body{
@@ -84,10 +84,12 @@ body{
 
 }
 
+/*                                       Barra de navegação                                                                               */
 nav{
   background-color: #ff5678;
   padding: 1em 1em 0.8em 1em;
-  /* display: grid; */
+  display: flex;
+  justify-content: space-between;
 }
 
 nav .content{ 
@@ -104,50 +106,58 @@ nav .portifolio{
   font-size: 2em;
   text-decoration: solid;
   font-weight: 600;
+  margin-left: 60%;
+  /* align-self: flex-end; */
 }
+
+/*                                        Explicações sobre a página                                                                               */
 
 main{
-  width: 100%;
-  /* height: 40vh; */
+  /* width: 100%; */
   text-align: center;
-  /* justify-content: center; */
   padding: 20px 10%;
   background-color: darkkhaki;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-image: url("images/main.jpg") ;
 }
 
-
-main .explicacoes{
+.explicacoes{
   width: 40%;
-  border: 4px solid salmon;
-
+  /* border: 4px solid salmon; */
 }
 
-main .explicacoes h2{
+.explicacoes h2{
   font-family: "Plus Jakarta Sans", serif;
   font-size: 3em;
 }
 
-main .explicacoes p{
+.explicacoes p{
   font-weight: 400;
   font-style: normal;
   font-size: 1.6em;
+  text-align: justify;
 }
 
-main .explicacoes .redes-ada{
-  border: 4px solid cornflowerblue;
-  display: inline;
+.explicacoes .redes-ada{
+  /* border: 4px solid cornflowerblue; */
+  display: flex;
+  justify-content: space-evenly;
 }
 
-main .explicacoes .redes-ada .icone-rede-ada{
-  /* display: inline; */
-  font-size: 1.6em;
-
-}
-
-main .explicacoes .redes-ada .icone-rede-ada img{
-  height: 3em;
-  width: 3em;
+.explicacoes .redes-ada .icone-rede-ada{
+  font-size: 1.5em;
   
+}
+
+.explicacoes .redes-ada .icone-rede-ada img{
+  height: 4em;
+  width: 4em;
+  
+}
+.explicacoes .redes-ada .icone-rede-ada h3{
+  margin-bottom: 0.4em;
 }
 
 
