@@ -116,11 +116,13 @@ main{
   /* width: 100%; */
   text-align: center;
   padding: 20px 10%;
-  background-color: darkkhaki;
+  /* background-color: darkkhaki; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-image: url("images/main.jpg") ;
+  background-image: url(/images/main.jpg); /* TODO verificar */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .explicacoes{
@@ -160,15 +162,21 @@ main{
   margin-bottom: 0.4em;
 }
 
+/*                                        Entidades                                                                               */
 
+#Entidades{
+  display: flex;
+  background-color: lightgray;
+}
 
+#Entidades section{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#Entidades .lista-entidades{
+  background-color: #ff5678;
+}
 
-
-
-
-
-
-/* #Entidades{
-  display: inline;
-} */
