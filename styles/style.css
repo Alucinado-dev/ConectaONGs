@@ -73,6 +73,11 @@
   font-size: 62.5%;
 }
 
+
+/* cores:   #0d2749  #00a5bd #f1f0ed #ffffff #ff5678 */
+
+
+
 body{
   margin: 0;
   /* border: none; */
@@ -81,7 +86,23 @@ body{
   font-family: "Ubuntu", serif;
   font-weight: 500;
   font-style: normal;
+}
 
+#home{
+  background-color: aquamarine;
+}
+
+#entidades {
+  background-color: crimson;
+}
+
+#cadastro{
+  background-color: seagreen;
+
+}
+
+#nova-categoria{
+  background-color: blueviolet;
 }
 
 /*                                       Barra de navegação                                                                               */
@@ -106,67 +127,80 @@ nav .portifolio{
   font-size: 2em;
   text-decoration: solid;
   font-weight: 600;
-  margin-left: 60%;
+  margin-left: 45%;
   /* align-self: flex-end; */
 }
 
-/*                                        Explicações sobre a página                                                                               */
 
 main{
   /* width: 100%; */
   text-align: center;
-  padding: 20px 10%;
   /* background-color: darkkhaki; */
+}
+
+/*                                        Home                                                                              */
+#home{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   background-image: url(/images/main.jpg); /* TODO verificar */
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 2% 8%;
 }
 
-.explicacoes{
-  width: 40%;
+#home  .explicacoes{
+  width: 45%;
   /* border: 4px solid salmon; */
+
 }
 
-.explicacoes h2{
+#home .explicacoes header{
+  border-bottom: 1px solid #ff5678;
+}
+
+#home .explicacoes header h2{
   font-family: "Plus Jakarta Sans", serif;
   font-size: 3em;
 }
 
-.explicacoes p{
+#home .explicacoes main p{
   font-weight: 400;
   font-style: normal;
   font-size: 1.6em;
   text-align: justify;
 }
 
-.explicacoes .redes-ada{
+#home .explicacoes .redes-ada{
   /* border: 4px solid cornflowerblue; */
   display: flex;
+  height:auto;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-.explicacoes .redes-ada .icone-rede-ada{
+#home .explicacoes .redes-ada .icone-rede-ada{
   font-size: 1.5em;
-  
 }
 
-.explicacoes .redes-ada .icone-rede-ada img{
+#home .explicacoes .redes-ada .icone-rede-ada img{
   height: 4em;
   width: 4em;
-  
 }
-.explicacoes .redes-ada .icone-rede-ada h3{
+
+#home .explicacoes .redes-ada .icone-rede-ada h3{
   margin-bottom: 0.4em;
+}
+
+#home .explicacoes footer {
+  text-align: center;
 }
 
 /*                                        Entidades                                                                               */
 
 #Entidades{
   display: flex;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 #Entidades section{
