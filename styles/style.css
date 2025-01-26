@@ -89,6 +89,19 @@ body{
   font-style: normal;
 }
 
+.fosco{
+  position: relative;
+  max-width: 400px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
 #home{
   background-color: aquamarine;
 }
@@ -205,18 +218,33 @@ main{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(https://unsplash.com/pt-br/fotografias/um-grupo-de-pessoas-em-um-barco-em-um-rio-YNyw3bQYgG0);
+  background-image: url(/images/ong.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   /* background: rgb(0,165,189); */
   /* background: linear-gradient(90deg, rgba(0,165,189,1) 0%, rgba(13,39,73,1) 100%); */
   padding: 2rem;
 }
 
 #entidades .lista-entidades{
-  background-color: #ff5678;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  
+  height: 50vh; 
 }
 
+#entidades span{
+  color: #ff5678;
+}
 
+/*                                        Cadastro                                                                */
+
+
+#cadastro{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#cadastro .cadastro-entidades{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
