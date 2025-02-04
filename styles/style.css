@@ -1,24 +1,6 @@
-
-.quicksand-conectaONGs {
-
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 body{
   background-color: var(--bg-color) ;
   font-family: var(--ubuntu);
-}
-
-
-
-#home{
-  background-color: aquamarine;
-}
-
-#entidades {
-  background-color: crimson;
 }
 
 #cadastro{
@@ -54,7 +36,7 @@ header nav ul li{
   box-sizing: content-box;
 }
 
-header nav ul li:hover, header nav ul li:focus{
+header nav ul li:hover,  header nav ul li:focus{
   border: 2px solid var(--text-color-light);
   border-radius: 8px;
   transform: scale(1.08);
@@ -80,57 +62,57 @@ header nav #portifolio{
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Home    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
-main{
-  text-align: center;
-}
-
 #home{
+  padding: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 2% 8%;
-  background: linear-gradient(0deg, rgba(0,165,189,1) 0%, rgba(13,39,73,1) 100%) ;
+  gap: 10rem;
+  background: linear-gradient(0deg, var(--secondary-color) 0%, var(--main-color) 100%) ;
 }
 
 #home  .explicacoes{
-  width: 45%;
   display: flex;
-  height:auto;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  /* border: 4px solid salmon; */
-  
+  font-size: 1.6rem; 
+  color: var(--text-color-light);
+  gap: 5rem;
 }
 
 #home .explicacoes h2{
   border-bottom: 1px solid var(--element-color);
   font-family: var(--jakarta);
-  font-size: 3em;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 
 
 #home .explicacoes p{
   font-weight: 400;
-  font-style: normal;
-  font-size: 1.6em;
+  font-size: 1em;
   text-align: justify;
 }
 
+#home .explicacoes .redes{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
 
 #home .explicacoes .redes .icone-rede-ada{
   font-size: 1.5em;
 }
 
 #home .explicacoes .redes .icone-rede-ada img{
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
 }
 
 #home .explicacoes .redes .icone-rede-ada h3{
-  margin-bottom: 0.4em;
+  margin-bottom: 1em;
 }
 
 
@@ -143,12 +125,11 @@ main{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: rgb(0,165,189);
   background-image: url(/images/ong.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background: rgb(0,165,189); */
-  
   padding: 2rem;
 }
 
@@ -172,10 +153,18 @@ main{
 #cadastro{
   display: flex;
   justify-content: space-evenly;
+  background: linear-gradient(0deg, var(--bg-color) 0%, var(--secondary-color) 100%) ;
 }
 
 #cadastro .cadastro-entidades{
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#nova-categoria{
+  display: flex;
+  font-size: 6.4rem;
+  background: linear-gradient(0deg, var(--element-color) 0%, var(--bg-color) 100%) ;
 }
