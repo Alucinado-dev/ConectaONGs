@@ -33,27 +33,49 @@ body{
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Barra de navegação    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 header{
   background-color: var(--main-color);
-  padding: 1em 1em 0.8em 1em;
+  padding: 24px 24px 24px 24px;
+}
+
+header nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul{ 
-  font-family: var(--quicksand);
-  font-size: 2em;
-  font-weight: 900;
-  /* border: 5px solid blueviolet; */
-  text-decoration: solid;
-  /* TODO reaprender a usar grid  */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5em;
+  align-items: center;
 }
+
+header nav ul li{
+  padding: 8px;
+  box-sizing: content-box;
+}
+
+header nav ul li:hover, header nav ul li:focus{
+  border: 2px solid var(--text-color-light);
+  border-radius: 8px;
+  transform: scale(1.08);
+  background: linear-gradient(90deg, rgba(0,165,189,1) 0%, rgba(13,39,73,1) 100%); 
+}
+
+header nav ul li a{
+  font-family: var(--quicksand);
+  font-size: 2.4rem;
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--text-color-light);
+}
+
 
 header nav #portifolio{
   font-family: var(--rubik-vinyl);
-  font-size: 2em;
-  text-decoration: solid;
-  font-weight: 600;
-  margin-left: 45%;
-  /* align-self: flex-end; */
+  font-size: 2.8rem;
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--text-color-light);
 }
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Home    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
@@ -66,10 +88,10 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: url(/images/main.jpg); /* TODO verificar */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2% 8%;
+  background: linear-gradient(0deg, rgba(0,165,189,1) 0%, rgba(13,39,73,1) 100%) ;
 }
 
 #home  .explicacoes{
@@ -126,7 +148,7 @@ main{
   background-size: cover;
   background-position: center;
   /* background: rgb(0,165,189); */
-  /* background: linear-gradient(90deg, rgba(0,165,189,1) 0%, rgba(13,39,73,1) 100%); */
+  
   padding: 2rem;
 }
 
