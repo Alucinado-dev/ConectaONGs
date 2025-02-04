@@ -1,0 +1,22 @@
+
+:root{
+        /* Fontes */
+    --rubik-vinyl: "Rubik Vinyl", serif;
+    --ubuntu: "Ubuntu", serif;
+    --jakarta: "Plus Jakarta Sans", serif;
+    --quicksand: "Quicksand", serif;
+
+        /* Cores */
+    --main-color : #0d2749;
+    --secondary-color:  #00a5bd;
+    --element-color: #ff5678 ;
+    --bg-color: #ffffff ;
+    --text-color-light:  #f1f0ed;
+    --text-color-dark: #322935;
+}
+
+.fosco{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);    
+}

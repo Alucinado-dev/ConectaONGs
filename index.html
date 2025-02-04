@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rubik+Vinyl&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
@@ -19,45 +20,40 @@
 
     <header>
         <nav>
-            <a href="#home" class="content">Entidades</a>
-            <a href="#entidades" class="content">Entidades</a>
-            <a href="#cadastro" class="content">Cadastro</a>
-            <a href="#nova-categoria" class="content">Nova Categoria</a>
-            <a href="#" class="portifolio">portifólio</a> <!-- portifolio ainda não criado -->
+            <ul>
+                <li> <a href="#home"> Home</a> </li>
+                <li> <a href="#entidades">Entidades</a> </li>
+                <li> <a href="#cadastro">Cadastro</a> </li>
+                <li> <a href="#nova-categoria">Nova Categoria</a> </li>
+            </ul>
+
+            <a href="#" id="portifolio">portifólio</a> <!-- portifolio ainda não criado -->
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <article class="explicacoes">
+            
+            <div class="explicacoes">
+                <h2>CONECTAONGS</h2>
 
-                <header>
-                    <h2>CONECTAONGS</h2>
-                </header>
+                <p>
+                    Este agregador de ONGs foi desenvolvido com o intuito de consolidar e aprimorar minhas habilidades em HTML e CSS.
+                    A aplicação utiliza conceitos como Flexbox para criar layouts flexíveis e adaptáveis a diferentes dispositivos. 
+                    Através deste projeto, busquei praticar o HTML semântico  para garantir uma estrutura clara e organizada do conteúdos como as informações das ONGs, e a construção de uma interface intuitiva e agradável ao usuário.
+                </p>
 
-                <main>    
-                    <p>
-                        Este agregador de ONGs foi desenvolvido com o intuito de consolidar e aprimorar minhas habilidades em HTML e CSS.
-                        A aplicação utiliza conceitos como Flexbox para criar layouts flexíveis e adaptáveis a diferentes dispositivos. 
-                        Através deste projeto, busquei praticar o HTML semântico  para garantir uma estrutura clara e organizada do conteúdos como as informações das ONGs, e a construção de uma interface intuitiva e agradável ao usuário.
-                    </p>
-                </main>
-
-                <footer>
-                    <p>
-                        código original dado no curso de css de ada tech brasil
-                    </p>
-                </footer>
-
-            </article>
+                <p>
+                    código original dado no curso de css de ada tech brasil
+                </p>
+            </div>
         
-            <article class="explicacoes">
-                <header>
-                    <h2>redes sociais de ada tech</h2>
-                </header>
+            <div class="explicacoes">
+        
+                <h2>redes sociais de ada tech</h2>
+                
+                <div class="redes">
 
-                <main>
-                    
                     <div class="icone-rede-ada">
                         <h3>linkedin</h3>
                         <a href="https://www.linkedin.com/school/adatechbr/">
@@ -79,53 +75,51 @@
                         </a>
                     </div>
                     
-                </main>
-            </article>
+                </div>
+                    
+            </div>
         
         </section>
         
         <section id="entidades">
-            <article class="lista-entidades fosco">
+            <div class="lista-entidades fosco">
                 <button class=" btn btn-entidades">Lista de <span>Entidades</span> Cadastradas!</button>
-            </article>
+            </div>
         </section>
         
         
         <section id="cadastro">
             
-            <article class="hero">
-                <figure class="hero-image">
-                    <img src="assets/hero.svg" alt="">
-                </figure>
-            </article>
+            <figure class="hero-image">
+                <img src="assets/hero.svg" alt="">
+            </figure>
 
-            <article class="cadrastro-entidades">
-                <header>
-                    <h3>coloque sua própria ong na lista de entidades Cadastradas selecionando uma das categorias abaixo</h3>
-                </header>
+            <div class="cadrastro-entidades">
                 
-                <main>
+                <h3>coloque sua própria ong na lista de entidades Cadastradas selecionando uma das categorias abaixo</h3>
+                
+                <div>
+                    <div id="lista-categorias">
+                        <button href="" class="btn" >categoria1</button>
+                        <button href="" class="btn" >categoria2</button>
+                        <button href="" class="btn" >categoria3</button>
+                        <button href="" class="btn" >categoria4</button>
+                        <button href="" class="btn" >categoria5</button>
+                        <button href="" class="btn" >categoria6</button>
+                    </div>
+                        
+                    <button class="btn btn-cadastro">Cadastro</button>    
+                </div>
 
-                    
-                    <button href="" class="btn" >categoria1</button>
-                    <button href="" class="btn" >categoria2</button>
-                    <button href="" class="btn" >categoria3</button>
-                    <button href="" class="btn" >categoria4</button>
-                    <button href="" class="btn" >categoria5</button>
-                    <button href="" class="btn" >categoria6</button>
-                    
-                    <button class="btn btn-cadastro">Cadastro</button>
-                    
-                </main>
-            </article>
+            </div>
         </section>
         
         
         <section id="nova-categoria">
-            <article class="nova-categoria-lista">
+            <div class="nova-categoria-lista">
                 <h3>Não achou sua categoria?</h3>
                 <a href="">crie sua própria categoria</a>
-            </article>
+            </div>
         </section>
         
         <section>

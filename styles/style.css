@@ -1,106 +1,17 @@
-/*                                       Aplicação de fontes                                                                */
-
-.rubik-vinyl-regular {
-    font-family: "Rubik Vinyl", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-.ubuntu-light {
-  font-family: "Ubuntu", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.ubuntu-regular {
-  font-family: "Ubuntu", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-medium {
-  font-family: "Ubuntu", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.ubuntu-bold {
-  font-family: "Ubuntu", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.ubuntu-light-italic {
-  font-family: "Ubuntu", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.ubuntu-regular-italic {
-  font-family: "Ubuntu", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.ubuntu-medium-italic {
-  font-family: "Ubuntu", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.ubuntu-bold-italic {
-  font-family: "Ubuntu", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.plus-jakarta-sans-conectaONGs {
-  font-family: "Plus Jakarta Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
 
 .quicksand-conectaONGs {
-  font-family: "Quicksand", serif;
+
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-
-/*                                       Estilização da página                                                                               */
-:root{
-  font-size: 62.5%;
-}
-
-
-/* cores:   #0d2749  #00a5bd #f1f0ed #ffffff #ff5678 */
-
-
-
 body{
-  margin: 0;
-  /* border: none; */
-  background-color:#f1f0ed ;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Ubuntu", serif;
-  font-weight: 500;
-  font-style: normal;
+  background-color: var(--bg-color) ;
+  font-family: var(--ubuntu);
 }
 
-.fosco{
-  position: relative;
-  max-width: 400px;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 3rem;
-}
+
 
 #home{
   background-color: aquamarine;
@@ -119,16 +30,16 @@ body{
   background-color: blueviolet;
 }
 
-/*                                       Barra de navegação                                                                               */
-nav{
-  background-color: #ff5678;
+/*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Barra de navegação    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
+header{
+  background-color: var(--main-color);
   padding: 1em 1em 0.8em 1em;
   display: flex;
   justify-content: space-between;
 }
 
-nav .content{ 
-  font-family: "Quicksand", serif;
+header nav ul{ 
+  font-family: var(--quicksand);
   font-size: 2em;
   font-weight: 900;
   /* border: 5px solid blueviolet; */
@@ -136,8 +47,8 @@ nav .content{
   /* TODO reaprender a usar grid  */
 }
 
-nav .portifolio{
-  font-family: "Rubik Vinyl", serif;
+header nav #portifolio{
+  font-family: var(--rubik-vinyl);
   font-size: 2em;
   text-decoration: solid;
   font-weight: 600;
@@ -145,14 +56,12 @@ nav .portifolio{
   /* align-self: flex-end; */
 }
 
+/*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Home    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
 main{
-  /* width: 100%; */
   text-align: center;
-  /* background-color: darkkhaki; */
 }
 
-/*                                        Home                                                                              */
 #home{
   display: flex;
   flex-direction: row;
@@ -165,52 +74,46 @@ main{
 
 #home  .explicacoes{
   width: 45%;
+  display: flex;
+  height:auto;
+  justify-content: space-evenly;
+  align-items: center;
   /* border: 4px solid salmon; */
-
+  
 }
 
-#home .explicacoes header{
-  border-bottom: 1px solid #ff5678;
-}
-
-#home .explicacoes header h2{
-  font-family: "Plus Jakarta Sans", serif;
+#home .explicacoes h2{
+  border-bottom: 1px solid var(--element-color);
+  font-family: var(--jakarta);
   font-size: 3em;
 }
 
-#home .explicacoes main p{
+
+
+#home .explicacoes p{
   font-weight: 400;
   font-style: normal;
   font-size: 1.6em;
   text-align: justify;
 }
 
-#home .explicacoes main{
-  /* border: 4px solid cornflowerblue; */
-  display: flex;
-  height:auto;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
-#home .explicacoes main .icone-rede-ada{
+#home .explicacoes .redes .icone-rede-ada{
   font-size: 1.5em;
 }
 
-#home .explicacoes main .icone-rede-ada img{
+#home .explicacoes .redes .icone-rede-ada img{
   height: 4em;
   width: 4em;
 }
 
-#home .explicacoes main .icone-rede-ada h3{
+#home .explicacoes .redes .icone-rede-ada h3{
   margin-bottom: 0.4em;
 }
 
-#home .explicacoes footer {
-  text-align: center;
-}
 
-/*                                        Entidades                                                                               */
+
+/*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Entidades    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
 
 #entidades{
@@ -229,14 +132,20 @@ main{
 
 #entidades .lista-entidades{
   height: 50vh; 
+  position: relative;
+  max-width: 400px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;  
 }
 
 #entidades span{
-  color: #ff5678;
+  color: var(--element-color);
 }
 
-/*                                        Cadastro                                                                */
-
+/*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Cadastro    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
 #cadastro{
   display: flex;
