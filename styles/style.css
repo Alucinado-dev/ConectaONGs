@@ -34,13 +34,15 @@ header nav ul{
 header nav ul li{
   padding: 8px;
   box-sizing: content-box;
+  transition: 700ms ease-in-out ;
 }
 
 header nav ul li:hover,  header nav ul li:focus{
-  border: 2px solid var(--text-color-light);
+  /* border: 2px solid var(--text-color-light); */
   border-radius: 8px;
   transform: scale(1.08);
-  background: linear-gradient(90deg, rgba(0,165,189,1) 0%, rgba(13,39,73,1) 100%); 
+  background-color: #0e7c7b;
+  background: linear-gradient(90deg,#0e7c7b 0%, var(--secondary-color) 100%); 
 }
 
 header nav ul li a{
@@ -63,37 +65,62 @@ header nav #portifolio{
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Home    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
 #home{
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10rem;
   background: linear-gradient(0deg, var(--secondary-color) 0%, var(--main-color) 100%) ;
-}
-
-#home  .explicacoes{
-  display: flex;
-  flex-direction: row;
+  padding: 2rem;
   justify-content: space-between;
-  align-items: center;
-  font-size: 1.6rem; 
   color: var(--text-color-light);
-  gap: 5rem;
+  font-size: 1.6rem; 
+  
+  display: grid;
+
 }
 
-#home .explicacoes h2{
+#home  h1{
   border-bottom: 1px solid var(--element-color);
   font-family: var(--jakarta);
   font-size: 2em;
   font-weight: 700;
+  grid-area: title;
 }
 
-
-
-#home .explicacoes p{
+#home  p{
   font-weight: 400;
   font-size: 1em;
   text-align: justify;
+}
+
+#home figure{
+  grid-area: img;
+}
+
+#home #objetivos{
+  grid-area: p1;
+}
+
+#home #creditos{
+  grid-area: p2
+}
+
+#home  .explicacoes{
+  grid-area: exp;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+#home{
+  grid-template-areas: 
+  ". ."
+  "title title"
+  ". ."
+  "img p1"
+  ". ."
+  "p2 exp"
+  ". ."
+
+  ;
 }
 
 #home .explicacoes .redes{
