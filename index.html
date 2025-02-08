@@ -6,11 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConectaONGs</title>
+    <link rel="shortcut icon" href="assets/conectaongs-favicon.png" type="image/x-icon">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rubik+Vinyl&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <!-- Stylesheets -->
+    <!-- Stylesheets -->  
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/vars.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -36,22 +37,31 @@
         <section id="home">
             
             <h1>CONECTA<span>ONGs</span></h1>
-
-            <figure>
-                <img src="" alt="">
+            
+            <div class="carrossel">
+                <div class="carrossel-container">
+                    <figure class="carrossel-slide"> <img src="images/carrossel/Captura de Tela (18).png" alt=""></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/home.png" alt=""></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/cadastro.png" alt=""></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/lista.png" alt=""></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/registrar.png" alt=""></figure>
+                </div>
+                
                 <figcaption> Projeto original </figcaption>
-            </figure>
+
+                <div class="carrossel-btn prev"></div>
+                <div class="carrossel-btn next"></div>
+
+                <div class="swiper-pagination"></div>
+                
+            </div>
 
             <p id="objetivo">
-                Este agregador de ONGs foi desenvolvido com o intuito de consolidar e aprimorar minhas habilidades em HTML e CSS.
-                A aplicação utiliza conceitos como Flexbox para criar layouts flexíveis e adaptáveis a diferentes dispositivos. 
-                Através deste projeto, busquei praticar o HTML semântico  para garantir uma estrutura clara e organizada do conteúdos como as informações das ONGs, e a construção de uma interface intuitiva e agradável ao usuário.
+                Este agregador de ONGs foi desenvolvido com o intuito de consolidar e aprimorar minhas habilidades em HTML e CSS. A aplicação utiliza conceitos como Flexbox para criar layouts flexíveis e adaptáveis a diferentes dispositivos. Através deste projeto, busquei praticar o HTML semântico  para garantir uma estrutura clara e organizada do conteúdos como as informações das ONGs, e a construção de uma interface intuitiva e agradável ao usuário.
             </p>
 
             <p id="creditos">
-                O curso no qual este projeto foi realizado trata-se de uma parceria entre o banco Santander e a empresa Ada Tech,
-                em um dos módulos que trata do aprendizado de CSS, na trilha Front-End, ministrado pelo professor web full-stack <a href="https://www.linkedin.com/in/felipe-o-cabral?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Felipe Cabral </a>
-                no qual eu adaptei com o estilo que achei apropriado porém sem fugir dos desafios propostos do projeto original, tais como o display Grid.
+                O curso no qual este projeto foi realizado trata-se de uma parceria entre o banco Santander e a empresa Ada Tech, em um dos módulos que trata do aprendizado de CSS, na trilha Front-End, ministrado pelo professor web full-stack <a href="https://www.linkedin.com/in/felipe-o-cabral?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Felipe Cabral </a> no qual eu adaptei com o estilo que achei apropriado porém sem fugir dos desafios propostos do projeto original, tais como o display Grid.
             </p>
         
             <div class="explicacoes">
@@ -150,6 +160,10 @@
             Babkin - Flaticon</a>
     </footer>
 
+
+
+
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
