@@ -71,16 +71,15 @@ header nav #portifolio{
   font-size: 1.6rem; 
   gap: 5rem;
   display: grid;
+  align-items: center;
   grid-template-areas: 
-  "title title"
-  ". ."
-  "carrossel p1"
-  ". ."
+  " title  title"
+  "carrossel  p1"
   "p2 exp";
 }
 
 #home  h1{
-  border-bottom: 5px dotted var(--element-color);
+  border-bottom: 5px solid var(--element-color);
   font-family: var(--jakarta);
   font-size: 2em;
   font-weight: 700;
@@ -90,13 +89,20 @@ header nav #portifolio{
   padding: 1rem;
 }
 
+#home h1 span{
+  color: var(--element-color);
+}
+
 #home  p{
   font-weight: 400;
   font-size: 1em;
   padding: 3em;
   text-align: justify;
   justify-items: center;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -106,12 +112,14 @@ header nav #portifolio{
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
+  border: none;
 }
 
 #home .carrossel .carrossel-container{
   display: flex;
   transition: transform 500ms ease-in-out;
-  background-color: var(--text-color-light);
+  background: transparent;
 }
 
 #home .carrossel .carrossel-container .carrossel-slide{
@@ -120,8 +128,9 @@ header nav #portifolio{
 }
 
 #home .carrossel .carrossel-container .carrossel-slide img{
-  width: 40rem;
-  height: 30rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 #home .carrossel .carrossel-btn{
@@ -158,8 +167,21 @@ header nav #portifolio{
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+
 }
 
+#home .explicacoes h2{
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-family: var(--quicksand);
+}
 
 #home .explicacoes .redes{
   display: flex;
@@ -168,17 +190,29 @@ header nav #portifolio{
 }
 
 #home .explicacoes .redes .icone-rede-ada{
-  font-size: 1.5em;
+  font-size: 1em;
+  color: var(--text-color-light);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #home .explicacoes .redes .icone-rede-ada img{
   height: 3em;
   width: 3em;
+  border-radius: 4px;
+  margin: 1.5em 0 1em 0;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#home .explicacoes .redes .icone-rede-ada h3{
-  margin-bottom: 1em;
+#home .explicacoes .redes .icone-rede-ada img:hover{
+  transform: scale(1.1);
 }
+
+
 
 
 
