@@ -31,28 +31,29 @@ header nav ul{
   align-items: center;
 }
 
-header nav ul li{
-  padding: 8px;
-  box-sizing: content-box;
-  transition: 700ms ease-in-out ;
-  border-radius: 8px;
-}
 
-header nav ul li:hover,  header nav ul li:focus{
-  /* border: 2px solid var(--text-color-light); */
-  transform: scale(1.08);
-  background-color: #0e7c7b;
-  background: linear-gradient(90deg,#0e7c7b 0%, var(--secondary-color) 100%); 
-}
 
 header nav ul li a{
+  padding: 1rem;
+  position: relative;
+  border-radius: 8px;
   font-family: var(--quicksand);
   font-size: 2.4rem;
   text-decoration: none;
   font-weight: 900;
   color: var(--text-color-light);
+  display: inline-block;
+  transform: scale(1);
+  transition: 500ms ease-in-out ;
+  filter: drop-shadow(0 0 10px var(--secondary-color));
 }
 
+header nav ul li a:hover,  header nav ul li a:focus{
+  outline: none;
+  transform: scale(1.1);
+  background-color: #0e7c7b;
+  background: linear-gradient(90deg,#0e7c7b 0%, var(--secondary-color) 100%); 
+}
 
 header nav #portifolio{
   font-family: var(--rubik-vinyl);
@@ -60,6 +61,11 @@ header nav #portifolio{
   text-decoration: none;
   font-weight: 900;
   color: var(--text-color-light);
+}
+
+header nav #portifolio:hover, header nav #portifolio:focus{
+  color: var(--element-color);
+  outline: none;
 }
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Home    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
@@ -75,7 +81,7 @@ header nav #portifolio{
   grid-template-areas: 
   " title  title"
   "carrossel  p1"
-  "p2 exp";
+  "exp p2";
 }
 
 #home  h1{
@@ -100,11 +106,35 @@ header nav #portifolio{
   text-align: justify;
   justify-items: center;
   background-color: rgba(255, 255, 255, 0.2);
-  
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
+  line-height: 2;
 }
+
+#home  p a{
+  color: var(--text-color-light);
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-decoration: none;
+  box-sizing: content-box;
+  font-weight: 700;
+  font-family: var(--quicksand);
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  transform: scale(1);
+  transition: 500ms ease-in-out ;
+  background-color: white;
+  color: var(--main-color);
+}
+
+#home  p a:hover, #home  p a:focus{
+  border: 1px solid var(--main-color);
+  outline: none;
+  transform: scale(1.04);
+}
+
+
 
 #home .carrossel{
   grid-area: carrossel;
@@ -114,6 +144,10 @@ header nav #portifolio{
   position: relative;
   border-radius: 10px;
   border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  height: auto;
+
 }
 
 #home .carrossel .carrossel-container{
@@ -152,6 +186,17 @@ header nav #portifolio{
   right: 1rem;
 }
 
+.carrossel figcaption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
 #home #objetivos{
   grid-area: p1;
 }
@@ -167,9 +212,9 @@ header nav #portifolio{
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: none;
   padding: 1rem;
 
 }
@@ -180,13 +225,13 @@ header nav #portifolio{
   text-align: center;
   margin-bottom: 1em;
   text-transform: uppercase;
-  font-family: var(--quicksand);
+  font-family: var(--jakarta);
 }
 
 #home .explicacoes .redes{
   display: flex;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 2rem;
 }
 
 #home .explicacoes .redes .icone-rede-ada{
@@ -197,6 +242,13 @@ header nav #portifolio{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 300ms ease-in-out;
+}
+
+#home .explicacoes .redes .icone-rede-ada:hover, #home .explicacoes .redes .icone-rede-ada:focus{
+  color: var(--element-color);
+  transform: scale(1.1);
+
 }
 
 #home .explicacoes .redes .icone-rede-ada img{
@@ -204,12 +256,22 @@ header nav #portifolio{
   width: 3em;
   border-radius: 4px;
   margin: 1.5em 0 1em 0;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 300ms ease-in-out;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 }
 
-#home .explicacoes .redes .icone-rede-ada img:hover{
+#home .explicacoes .redes .icone-rede-ada a{
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-size: 1.2em;
+  font-weight: 700;
+  transition: transform 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+#home .explicacoes .redes .icone-rede-ada a:hover, #home .explicacoes .redes .icone-rede-ada a:focus{
   transform: scale(1.1);
+  outline: none;
 }
 
 
