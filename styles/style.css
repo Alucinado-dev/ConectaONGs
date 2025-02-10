@@ -123,17 +123,24 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   margin: 0 auto;
   display: inline-block;
   transform: scale(1);
-  transition: 500ms ease-in-out ;
+  transition: var(--transition) ;
   background-color: white;
   color: var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 #home  p a:hover, #home  p a:focus{
-  border: 1px solid var(--main-color);
   outline: none;
-  transform: scale(1.04);
+  transform: translateY(-4px);
 }
 
+#home #objetivos{
+  grid-area: p1;
+}
+
+#home #creditos{
+  grid-area: p2
+}
 
 
 #home .carrossel{
@@ -197,13 +204,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   text-align: center;
 }
 
-#home #objetivos{
-  grid-area: p1;
-}
 
-#home #creditos{
-  grid-area: p2
-}
 
 #home  .explicacoes{
   grid-area: exp;
@@ -284,30 +285,108 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 #entidades{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: rgb(0,165,189);
   background-image: url(/images/ong.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 2rem;
+  padding: 2rem ;
+  gap: 6rem;
+  font-size: 1.4rem;
 }
 
-#entidades .lista-entidades{
-  height: 50vh; 
+#entidades .explicacao-entidades{
   position: relative;
-  max-width: 400px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 40rem;
+  border-radius: 2rem;
   padding: 2rem 3rem;  
+  text-align: justify;
 }
 
-#entidades span{
-  color: var(--element-color);
+#entidades .explicacao-entidades p{
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--text-color-light);
+  line-height: 1.5;
+  text-shadow: var(--box-shadow);
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  position: relative;
 }
+
+#entidades .explicacao-entidades p span{
+  /* font-size: 1.2em; */
+  background: var(--element-color);
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  color: var(--text-color-light);
+  font-weight: 700;
+  font-family: var(--quicksand);
+  text-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+#entidades  .lista-entidades{
+  position: relative;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+
+#entidades  .lista-entidades h2{
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+  font-size: 2em;
+  font-family: var(--quicksand);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: var(--box-shadow);
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+}
+
+
+
+#entidades .lista-entidades .btn-entidades{
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: var(--element-color);
+  color: var(--text-color-light);
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 0 0 2rem 2rem;
+  opacity: 1;
+}
+
+#entidades .lista-entidades .btn-entidades:hover, #entidades .lista-entidades .btn-entidades:focus{
+  background: var(--secondary-color);
+  color: var(--text-color-light);
+}
+
+
+
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Cadastro    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
