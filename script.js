@@ -24,4 +24,21 @@ nextButton.addEventListener('click', () => {
 
 
 
+const buttonEntidades = documente.querySelectorAll('btn-entidades');
+
+
+function showEntidades() {
+    const vejaEntidades = document.querySelector('.veja-entidades');
+    const entidadesCadastradas = document.querySelector('.entidades-cadastradas');
+    if (entidadesCadastradas.style.display === 'none') {
+        entidadesCadastradas.style.display = 'flex';
+        vejaEntidades.style.display = 'none';
+    }
+    else {
+        entidadesCadastradas.style.display = 'none';
+        vejaEntidades.style.display = 'flex';
+    }
+}
+
+buttonEntidades.addEventListener('click', showEntidades);
 

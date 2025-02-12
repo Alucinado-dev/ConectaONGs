@@ -1,5 +1,5 @@
 body{
-  background-color: var(--bg-color) ;
+  background-color: var(--bg-color);
   font-family: var(--ubuntu);
 }
 
@@ -33,7 +33,7 @@ header nav ul li a{
   color: var(--text-color-light);
   display: inline-block;
   transform: scale(1);
-  transition: 500ms ease-in-out ;
+  transition: all var(--transition);
   filter: drop-shadow(0 0 10px var(--secondary-color));
 
   &:hover, &:focus{
@@ -51,12 +51,18 @@ header nav #portifolio{
   text-decoration: none;
   font-weight: 900;
   color: var(--text-color-light);
+  transition: all var(--transition);
+
+  &:hover, &:focus{
+    outline: none;
+    color: var(--element-color);
+    transform: scale(1.1);
+    background-color: #0e7c7b;
+    background: linear-gradient(45deg,#0e7c7b 0%, var(--secondary-color) 100%); 
+  }
 }
 
-header nav #portifolio:hover, header nav #portifolio:focus{
-  color: var(--element-color);
-  outline: none;
-}
+
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Home    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
@@ -77,12 +83,13 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 #home  h1{
   border-bottom: 5px solid var(--element-color);
   font-family: var(--jakarta);
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: 700;
   grid-area: title;
   text-align: center;
   margin: 3rem 12rem 3rem 12rem;
   padding: 1rem;
+  color: var(--text-color-light);
 }
 
 #home h1 span{
@@ -117,12 +124,19 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   background-color: white;
   color: var(--main-color);
   border: 1px solid var(--main-color);
+
+  &:hover, &:focus{
+    outline: none;
+    transform: translateY(-8px);
+    border: 1px solid var(--element-color);
+
+  &:active{
+    transform: translateY(0);
+    border: 1px solid var(--main-color);
+  }
 }
 
-#home  p a:hover, #home  p a:focus{
-  outline: none;
-  transform: translateY(-4px);
-}
+
 
 #home #objetivos{
   grid-area: p1;
@@ -149,7 +163,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 
 #home .carrossel .carrossel-container{
   display: flex;
-  transition: transform 500ms ease-in-out;
+  transition: all var(--transition);
   background: transparent;
 }
 
@@ -192,6 +206,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   color: white;
   padding: 1rem;
   text-align: center;
+  font-size: 1.4em;
 }
 
 
@@ -211,12 +226,14 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 }
 
 #home .explicacoes h2{
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1em;
   text-transform: uppercase;
   font-family: var(--jakarta);
+  color: var(--text-color-light);
+  text-shadow: var(--box-shadow);
 }
 
 #home .explicacoes .redes{
@@ -226,44 +243,42 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 }
 
 #home .explicacoes .redes .icone-rede-ada{
-  font-size: 1em;
+  font-size: 1.2em;
   color: var(--text-color-light);
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 300ms ease-in-out;
-}
+  transition: all var(--transition);
 
-#home .explicacoes .redes .icone-rede-ada:hover, #home .explicacoes .redes .icone-rede-ada:focus{
-  color: var(--element-color);
-  transform: scale(1.1);
+  &:hover, &:focus{
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  &:visited{
+    color: red;
+  }
 
 }
 
 #home .explicacoes .redes .icone-rede-ada img{
-  height: 3em;
-  width: 3em;
+  height: 3rem;
+  width: 3rem;
   border-radius: 4px;
-  margin: 1.5em 0 1em 0;
-  transition: transform 300ms ease-in-out;
+  margin: 1.5rem 0 1rem 0;
+  transition: all var(--transition);
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
 }
 
 #home .explicacoes .redes .icone-rede-ada a{
-  text-decoration: none;
   color: var(--text-color-light);
   font-size: 1.2em;
   font-weight: 700;
-  transition: transform 0.3s ease-in-out;
   background-color: transparent;
 }
 
-#home .explicacoes .redes .icone-rede-ada a:hover, #home .explicacoes .redes .icone-rede-ada a:focus{
-  transform: scale(1.1);
-  outline: none;
-}
 
 
 
@@ -319,7 +334,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 }
 
 #entidades  .veja-entidades{
-  display: none;
+  display: flex;
   position: relative;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.6);
@@ -330,6 +345,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   align-items: center;
   box-shadow: var(--box-shadow);
   z-index: 1;
+  transition: all var(--transition);
 
 }
 
@@ -349,7 +365,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   box-shadow: var(--box-shadow);
   z-index: 1;
   width: 100%;
-
+  transition: all var(--transition);
 
   &:hover, &:focus{
     outline: none;
@@ -368,19 +384,20 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 }
 
 #entidades .entidades-cadastradas{
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
   border-radius: 2rem;
   box-shadow: var(--box-shadow);
+  transition: all var(--transition);
 
 }
 
 
 #entidades .entidades-cadastradas input{
-  font-size: 1.6rem;
+  font-size: 1.4em;
   font-weight: 700;
   color: var(--element-color);
   text-align: center;
@@ -405,7 +422,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 
   &::placeholder{
     color: var(--text-color-dark);
-    font-size: 1.6rem;
+    font-size: 1.4em;
     font-weight: 700;
     text-align: center;
     text-decoration: wavy;
@@ -544,6 +561,8 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   }
 
 }
+
+
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Cadastro    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
