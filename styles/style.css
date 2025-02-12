@@ -295,6 +295,12 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   padding: 2rem ;
   gap: 6rem;
   font-size: 1.4rem;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 #entidades .explicacao-entidades{
@@ -320,7 +326,6 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 }
 
 #entidades .explicacao-entidades p span{
-  /* font-size: 1.2em; */
   background: var(--element-color);
   border-radius: 0.6rem;
   padding: 0.5rem;
@@ -337,21 +342,29 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 }
 
 
-#entidades  .lista-entidades{
+#entidades .lista-entidades{
+  overflow: hidden;
+  max-height: 80%;
+
+}
+
+#entidades  .veja-entidades{
+  display: none;
   position: relative;
   border-radius: 2rem;
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-shadow: var(--box-shadow);
   z-index: 1;
+
 }
 
 
-#entidades  .lista-entidades h2{
+#entidades  .veja-entidades h2{
   position: relative;
   text-align: center;
   padding: 2rem;
@@ -369,7 +382,7 @@ header nav #portifolio:hover, header nav #portifolio:focus{
 
 
 
-#entidades .lista-entidades .btn-entidades{
+#entidades .veja-entidades .btn-entidades{
   font-size: 1.6rem;
   font-weight: 700;
   background: var(--element-color);
@@ -378,15 +391,100 @@ header nav #portifolio:hover, header nav #portifolio:focus{
   width: 100%;
   border-radius: 0 0 2rem 2rem;
   opacity: 1;
+  &:hover, &:focus{
+    background: var(--secondary-color);
+    color: var(--text-color-light);
+  }
 }
 
-#entidades .lista-entidades .btn-entidades:hover, #entidades .lista-entidades .btn-entidades:focus{
-  background: var(--secondary-color);
+#entidades .entidades-cadastradas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+#entidades  .entidades-cadastradas h3{
+  font-size: 1.6rem;
+  font-weight: 700;
   color: var(--text-color-light);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--quicksand);
+  margin-bottom: 1rem;
+  text-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  position: relative;
+  background-color: var(--secondary-color);
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem;
 }
 
+#entidades .entidades-cadastradas input{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-color-dark);
+  text-align: center;
+  text-transform:lowercase;
+  font-family: var(--ubuntu);
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  position: relative;
+  background-color: transparent;
+  border-radius: 4rem;
+  padding: 1rem;
+  border: none;
+  
+  &:hover,&:focus{
+    outline: none;
+    border: none;
+  }
 
+  &::placeholder{
+    color: var(--text-color-dark);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: wavy;
+    font-family: var(--ubuntu);
+    margin-bottom: 1rem;
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    border-radius: 4rem;
+    padding: 1rem;
+    border: none;
+  }
+}
 
+#entidades .entidades-cadastradas .entidades-cadastradas-lista{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--element-color) transparent;
+
+  
+}
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Cadastro    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
