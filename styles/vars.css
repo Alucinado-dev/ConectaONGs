@@ -45,15 +45,29 @@
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
-    transition: all var(--transition-speed) ease-in-out;
+    transition: all var(--transition) cubic-bezier(0.25, 0.46, 0.45, 0.94);
     box-shadow: var(--box-shadow);
-}
-
-.btn:hover {
-    background-color: var(--main-color);
-    transform: translateY(-2px);
-}
-
-.btn:active {
     transform: translateY(0);
+
+    &:hover, &:focus{
+        outline: none;
+        transform: translateY(-12px);
+        background-color: var(--main-color);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+mark{
+    color: var(--element-color);
+    background-color: transparent;
+}
+  
+abbr{
+    text-decoration: none;
+    color: var(--element-color);
+    font-weight: 700;
+    text-shadow: var(--box-shadow);
 }
