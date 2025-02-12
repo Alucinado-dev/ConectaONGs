@@ -129,13 +129,13 @@ header nav #portifolio{
     outline: none;
     transform: translateY(-8px);
     border: 1px solid var(--element-color);
-
+  }
   &:active{
     transform: translateY(0);
     border: 1px solid var(--main-color);
   }
-}
 
+}
 
 
 #home #objetivos{
@@ -582,5 +582,5 @@ header nav #portifolio{
 #nova-categoria{
   display: flex;
   font-size: 6.4rem;
-  background: linear-gradient(0deg, var(--element-color) 0%, var(--bg-color) 100%) ;
+  background: linear-gradient(0deg, var(--element-color) 0%, var(--bg-color) 100%);
 }
