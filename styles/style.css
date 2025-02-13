@@ -346,7 +346,6 @@ header nav #portifolio{
   box-shadow: var(--box-shadow);
   z-index: 1;
   transition: all var(--transition);
-
 }
 
 

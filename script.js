@@ -22,23 +22,21 @@ nextButton.addEventListener('click', () => {
     }
 });
 
-
-
-const buttonEntidades = documente.querySelectorAll('btn-entidades');
-
+const buttonEntidades = document.querySelectorAll('.btn-entidades');
 
 function showEntidades() {
     const vejaEntidades = document.querySelector('.veja-entidades');
     const entidadesCadastradas = document.querySelector('.entidades-cadastradas');
-    if (entidadesCadastradas.style.display === 'none') {
+    if (entidadesCadastradas.style.display === 'none' || entidadesCadastradas.style.display === '') {
         entidadesCadastradas.style.display = 'flex';
         vejaEntidades.style.display = 'none';
-    }
-    else {
+    } else {
         entidadesCadastradas.style.display = 'none';
         vejaEntidades.style.display = 'flex';
     }
 }
 
-buttonEntidades.addEventListener('click', showEntidades);
+buttonEntidades.forEach(button => {
+    button.addEventListener('click', showEntidades);
+});
 
