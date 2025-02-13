@@ -396,7 +396,7 @@ header nav #portifolio{
 
 
 #entidades .entidades-cadastradas input{
-  font-size: 1.4em;
+
   font-weight: 700;
   color: var(--element-color);
   text-align: center;
@@ -421,7 +421,7 @@ header nav #portifolio{
 
   &::placeholder{
     color: var(--text-color-dark);
-    font-size: 1.4em;
+  
     font-weight: 700;
     text-align: center;
     text-decoration: wavy;
