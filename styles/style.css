@@ -563,20 +563,197 @@ header nav #portifolio{
 
 
 
-/*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Cadastro    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
+/*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Nova Ong    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
-#cadastro{
-  display: flex;
-  justify-content: space-evenly;
+#nova-ong{
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
   background: linear-gradient(0deg, var(--bg-color) 0%, var(--secondary-color) 100%) ;
+  font-size: 1.2rem;
+  grid-template-areas: 
+  ". titulo titulo titulo ."
+  ". formulario . imagem ."
+  ". formulario . imagem ."
+  ;
+
 }
 
-#cadastro .cadastro-entidades{
-  font-size: 2rem;
+#nova-ong  h2{
+  grid-area: titulo;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--text-color-light);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--jakarta);
+  text-shadow: var(--box-shadow);
+  padding: 4rem;
+}
+
+#nova-ong div{
+  grid-area: formulario;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#nova-ong div form{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  background-color: rgba(0, 0, 0, 0.6);
 }
+
+#nova-ong div form input{
+  font-weight: 700;
+  color: var(--element-color);
+  text-align: start;
+  text-transform:lowercase;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  position: relative;
+  border-radius: 4rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--bg-color);
+  opacity: 0.5;
+  transition: all var(--transition);
+  overflow: auto;
+  
+  &:hover, &:focus{
+    outline: none;
+    opacity: 1;
+  }
+
+  &::placeholder{
+    color: var(--text-color-dark);
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    border-radius: 4rem;
+    padding: 1rem;
+  }
+}
+
+
+
+#nova-ong div form label{
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--text-color-light);
+  text-align: start;
+  text-transform: capitalize;
+  font-family: var(--jakarta);
+  padding: 1rem;
+  width: 100%;
+}
+
+#nova-ong div form select{
+  color: var(--element-color);
+  text-align: start;
+  width: 50%;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  position: relative;
+  border-radius: 4rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--bg-color);
+  opacity: 0.5;
+  transition: all var(--transition);
+  overflow: scroll;
+  max-height: 30vh;
+  cursor: pointer;
+
+  
+  &:hover, &:focus{
+    outline: none;
+    opacity: 1;
+
+  }
+}
+
+#nova-ong div form select option{
+  margin: 1rem;
+  padding: 0 auto;
+
+}
+
+#nova-ong div form button{
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+  font-size: 1.5em;
+  font-family: var(--quicksand);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: var(--box-shadow);
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  width: 100%;
+  transition: all var(--transition);
+
+  &:hover, &:focus{
+    outline: none;
+    transform: translateY(0);
+    background-color: var(--element-color);
+  }
+
+  &:active{
+    background-color: var(--secondary-color);
+  }
+
+}
+
+
+#nova-ong figure{
+  grid-area: imagem;
+  border-radius: 4rem;
+  box-shadow: var(--box-shadow);
+  width: 45rem;
+  height: 30rem;
+  overflow: hidden;
+  z-index: 1;
+  position: relative; 
+  box-shadow: var(--box-shadow);
+}
+
+#nova-ong figure figcaption{
+  position: absolute; 
+  bottom: 0; 
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.6em;
+  z-index: 2;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #nova-categoria{
   display: flex;

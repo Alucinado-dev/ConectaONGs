@@ -230,28 +230,43 @@
         </section>
         
         
-        <section id="cadastro">
-            
-
-
-            <div class="cadrastro-entidades">
+        <section id="nova-ong">
+                           
+            <h2>coloque sua própria ong na lista de entidades cadastradas </h2>
+            <div>
                 
-                <h3>coloque sua própria ong na lista de entidades Cadastradas selecionando uma das categorias abaixo</h3>
-                
-                <div>
-                    <div id="lista-categorias">
-                        <button href="" class="btn" >categoria1</button>
-                        <button href="" class="btn" >categoria2</button>
-                        <button href="" class="btn" >categoria3</button>
-                        <button href="" class="btn" >categoria4</button>
-                        <button href="" class="btn" >categoria5</button>
-                        <button href="" class="btn" >categoria6</button>
-                    </div>
-                        
-                    <button class="btn btn-cadastro">Cadastro</button>    
-                </div>
-
+                <form id="cadastro" action="">
+                    <label for="nome-ong">Nome da ONG</label>
+                    <input type="text" id="nome-ong" name="nome-ong" required autofocus mozactionhint="next"  autocomplete="on"  >
+                    
+                    <label for="logo-ong">Logo da ONG</label>
+                    <input type="file" accept="image/*" id="logo-ong" name="logo-ong" required>
+                    
+                    <label for="categoria-ong">Categoria da ONG</label>
+                    <select name="categoria-ong" id="categoria-ong" required>
+                        <option disabled >selecione <i class="fa-solid fa-chevron-down"></i> </option>
+                        <option value="categoria1">Categoria 1</option>
+                        <option value="categoria2">Categoria 2</option>
+                        <option value="categoria3">Categoria 3</option>
+                        <option value="categoria4">Categoria 4</option>
+                        <option value="categoria5">Categoria 5</option>
+                        <option value="categoria6">Categoria 6</option>
+                        <option value="categoria7">Categoria 7</option>
+                        <option value="categoria8">Categoria 8</option>
+                        <option value="categoria9">Categoria 9</option>
+                    </select>
+                    
+                    <label for="site-ong">Site da ONG</label>
+                    <input type="url" id="site-ong" name="site-ong" required mozactionhint="send"  autocomplete="on" x-moz-errormessage="coloque um site válido!">
+                    
+                    <button type="submit" class="btn btn-cadastro">Cadastrar</button>
+                </form>   
             </div>
+
+            <figure>
+                <img src="https://images.pexels.com/photos/6995220/pexels-photo-6995220.jpeg" alt="pessoas doando comida para a caridade">
+                <figcaption>Photo by Julia M Cameron from Pexels: https://www.pexels.com/photo/people-donating-food-to-a-charity-6995220/ </figcaption>
+            </figure>
         </section>
         
         
