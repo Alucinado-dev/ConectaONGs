@@ -1,0 +1,6 @@
+@media screen and (max-width: 964px) {
+    :root{
+        font-size: 50% ;  /* TODO não funciona, arrumar */
+    }
+    
+}
