@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/vars.css">
     <link rel="stylesheet" href="styles/style.css">
-    <!-- Ìcones -->
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <!-- Ícones -->
     <script src="https://kit.fontawesome.com/db1c54e319.js" crossorigin="anonymous"></script>
 
 </head>
@@ -27,26 +28,26 @@
             <ul>
                 <li> <a href="#home"> Home</a> </li>
                 <li> <a href="#entidades">Entidades</a> </li>
-                <li> <a href="#cadastro">Cadastro</a> </li>
-                <li> <a href="#nova-categoria">Nova Categoria</a> </li>
+                <li> <a href="#nova-ong">Cadastro</a> </li>
+                <li> <a href="#categorias">Categorias</a> </li>
             </ul>
 
-            <a href="#" id="portifolio">portifólio   <span class="fa-solid fa-up-right-from-square"></span></a> <!-- portifolio ainda não criado -->
+            <a href="#" aria-errormessage="portifólio ainda não criado" id="portifolio">portifólio   <span class="fa-solid fa-up-right-from-square"></span></a> <!-- portifolio ainda não criado -->
         </nav>
     </header>
 
     <main>
         <section id="home">
             
-            <h1>CONECTA<span>ONGs</span></h1>
+            <h1>CONECTA<mark>ONGs</mark></h1>
             
             <div class="carrossel">
                 <div class="carrossel-container">
-                    <figure class="carrossel-slide"> <img src="images/carrossel/Captura de Tela (18).png" alt=""></figure>
-                    <figure class="carrossel-slide"> <img src="images/carrossel/home.png" alt=""></figure>
-                    <figure class="carrossel-slide"> <img src="images/carrossel/cadastro.png" alt=""></figure>
-                    <figure class="carrossel-slide"> <img src="images/carrossel/lista.png" alt=""></figure>
-                    <figure class="carrossel-slide"> <img src="images/carrossel/registrar.png" alt=""></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/Captura de Tela (18).png" alt="Captura de Tela do projeto original"></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/home.png" alt="Captura de Tela do projeto original"></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/cadastro.png" alt="Captura de Tela do projeto original"></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/lista.png" alt="Captura de Tela do projeto original"></figure>
+                    <figure class="carrossel-slide"> <img src="images/carrossel/registrar.png" alt="Captura de Tela do projeto original"></figure>
                 </div>
                 
                 <figcaption> Imagens do projeto inspiração </figcaption>
@@ -56,13 +57,13 @@
             </div>
 
             <p id="objetivo">
-                Este agregador de ONGs foi desenvolvido com o intuito de consolidar e aprimorar minhas habilidades em HTML e CSS. A aplicação utiliza conceitos como Flexbox para criar layouts flexíveis e adaptáveis a diferentes dispositivos. Através deste projeto, busquei praticar o HTML semântico  para garantir uma estrutura clara e organizada do conteúdos como as informações das ONGs, e a construção de uma interface intuitiva e agradável ao usuário.
+                Este agregador de ONGs foi desenvolvido com o intuito de consolidar e aprimorar minhas habilidades em HTML e CSS.  Utiliza conceitos como Flex e Grid para criar layouts flexíveis e adaptáveis a diferentes dispositivos e eventos interativos utilizando javaScript. 
+                <br>
+                Através deste projeto, busquei boas práticas de código como o HTML semântico, a estilização pra vários dispositivos atraves de <i>media queries</i> e a construção de uma interface intuitiva, acessível e agradável ao usuário. Além de 
             </p>
 
             <p id="creditos">
-                O curso no qual este projeto foi realizado trata-se de uma parceria entre o banco Santander e a empresa Ada Tech, em um dos módulos que trata do aprendizado de CSS, na trilha Front-End, ministrado pelo professor web full-stack :
-                <a href="https://www.linkedin.com/in/felipe-o-cabral?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Felipe Cabral <span class="fa-brands fa-linkedin"> </span> </a>
-                No entanto eu adaptei com o estilo que achei apropriado porém sem fugir dos desafios propostos do projeto original, tais como o display Grid.
+                Este projeto foi realizado como adaptação de um projeto sugerido no módulo de CSS (ministrado pelo professor web full-stack <a href="https://www.linkedin.com/in/felipe-o-cabral?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> Felipe Cabral <span class="fa-brands fa-linkedin"> </span> </a> ) na trilha front-end, que é parte do Santander Tech + realizado como uma parceria entre o banco Santander e a empresa Ada Tech.
             </p>
         
             <div class="explicacoes">
@@ -232,7 +233,7 @@
         
         <section id="nova-ong">
                            
-            <h2>coloque sua própria ong na lista de entidades cadastradas </h2>
+            <h2>coloque sua própria <mark>ong</mark> na lista de entidades cadastradas </h2>
             <div>
                 
                 <form id="cadastro" action="">
@@ -292,25 +293,37 @@
     </main>
 
     <footer>
-
-        <h3> &copy; Créditos: </h3>
-        <p>Foto de <a href="https://unsplash.com/pt-br/@iatulp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Atul Pandey</a> na <a href="https://unsplash.com/pt-br/fotografias/um-grupo-de-pessoas-em-um-barco-em-um-rio-YNyw3bQYgG0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            </p>
-        
-        <p>Foto de <a href="https://unsplash.com/pt-br/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> na <a href="https://unsplash.com/pt-br/fotografias/um-close-up-de-um-vaso-branco-em-uma-mesa-dxsPQnFpQus?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            </p>
-
-        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by
-            riajulislam - Flaticon</a>
-
-        <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by
+        <div class="creditos">
+            <h3> &copy; Créditos: </h3>
+            <p>Foto de <a href="https://unsplash.com/pt-br/@iatulp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Atul Pandey</a> na <a href="https://unsplash.com/pt-br/fotografias/um-grupo-de-pessoas-em-um-barco-em-um-rio-YNyw3bQYgG0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+            
+            <p>Foto de <a href="https://unsplash.com/pt-br/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel Czerwinski</a> na <a href="https://unsplash.com/pt-br/fotografias/um-close-up-de-um-vaso-branco-em-uma-mesa-dxsPQnFpQus?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+            
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by
+                riajulislam - Flaticon</a>
+                
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by
             cobynecz - Flaticon</a>
-
-        <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Ruslan
+            
+            <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Ruslan
             Babkin - Flaticon</a>
+            
+            <a href=" https://www.pexels.com/photo/people-donating-food-to-a-charity-6995220/">Photo by Julia M Cameron from Pexels </a>
+        </div>
 
-        <a href=" https://www.pexels.com/photo/people-donating-food-to-a-charity-6995220/">Photo by Julia M Cameron from Pexels </a>
 
+        <div class="minhas-redes">
+            <h3> Desenvolvido por <strong>Lucino De Campos</strong> em 2025 &copy; </h3>
+            
+            <h4>Me encontre nas redes sociais:</h4>
+
+            <div class="icones-redes">                
+                <a href="https://www.linkedin.com/in/lucino-de-campos/" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ALucin4do/ConectaONGs" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/lucino_de_campos/" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
     </footer>
 
 

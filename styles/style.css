@@ -57,9 +57,9 @@ header nav #portifolio{
     outline: none;
     color: var(--element-color);
     transform: scale(1.1);
-    background-color: #0e7c7b;
-    background: linear-gradient(45deg,#0e7c7b 0%, var(--secondary-color) 100%); 
   }
+
+  
 }
 
 
@@ -782,7 +782,7 @@ header nav #portifolio{
 }
 
 #categorias .lista-categorias .categorias a{
-  background-color: var(--alternative-color);
+  background-color: var(--main-color);
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: var(--box-shadow);
@@ -790,12 +790,12 @@ header nav #portifolio{
 
   &:hover, &:focus{
     outline: none;
-    background-color: var(--main-color);
+    background-color: var(--alternative-color);
 
   }
 
   &:active{
-    background-color: var(--alternative-color);
+    background-color: var(--main-color);
   }
   
 }
@@ -811,11 +811,52 @@ header nav #portifolio{
 footer{
   background-color: var(--element-color);
   font-size: 1.4rem;
-  padding: 5rem;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+
+}
+
+footer .creditos{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: start;
+  justify-content: space-evenly;
   gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+
+}
+
+footer .minhas-redes{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+footer .minhas-redes .icones-redes{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+
+}
+
+footer .minhas-redes .icones-redes a{
+  font-size: 4em;
+  color: var(--main-color);
+  border-radius: 1rem;
+
+
+  transition: all var(--transition);
+
+  &:hover, &:focus{
+    outline: none;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px var(--secondary-color)) ;
+  }
+
 
 }
