@@ -1,6 +1,14 @@
 @media screen and (max-width: 964px) {
     :root{
-        font-size: 50% ;  /* TODO não funciona, arrumar */
+        font-size: 50% ; 
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    :root{
+        font-size: 32.5% ; 
     }
     
 }
