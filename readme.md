@@ -27,16 +27,9 @@ O projeto **ConectaONGs** é um agregador de ONGs desenvolvido com o intuito de 
 - `styles/style.css`: Estilos principais do projeto.
 - `script.js`: Funcionalidades interativas em JavaScript.
 
-## Como Executar o Projeto
+## Site do Projeto
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/ALucin4do/ConectaONGs.git
-  
-2. Navegue até o diretório do projeto:
-    cd ConectaONGs
 
-3. Abra o arquivo index.html no seu navegador preferido.
 
 ## Estrutura de Arquivos
 ConectaONGs/
@@ -57,8 +50,11 @@ ConectaONGs/
 │   ├── reset.css
 │   ├── vars.css
 │   └── style.css
+│   └── media-queries.css   
 ├── script.js
 └── index.html
+└── readme.md
+└── LICENSE 
 
 
 ## Créditos
