@@ -25,36 +25,13 @@ O projeto **ConectaONGs** é um agregador de ONGs desenvolvido com o intuito de 
 - `styles/reset.css`: Reset de estilos para garantir consistência entre navegadores.
 - `styles/vars.css`: Variáveis CSS para facilitar a manutenção e consistência de estilos.
 - `styles/style.css`: Estilos principais do projeto.
+- `styles/media-queries.css` : Estilos alternativos para diferentes dispositivos
 - `script.js`: Funcionalidades interativas em JavaScript.
 
 ## Site do Projeto
 
+https://conecta-ongs-orcin.vercel.app/
 
-
-## Estrutura de Arquivos
-ConectaONGs/
-├── assets/
-│   ├── conectaongs-favicon.png
-│   └── hero.svg
-├── images/
-│   ├── carrossel/
-│   │   ├── Captura de Tela (18).png
-│   │   ├── home.png
-│   │   ├── cadastro.png
-│   │   ├── lista.png
-│   │   └── registrar.png
-│   ├── linkedin.png
-│   ├── instagram.png
-│   └── youtube.png
-├── styles/
-│   ├── reset.css
-│   ├── vars.css
-│   └── style.css
-│   └── media-queries.css   
-├── script.js
-└── index.html
-└── readme.md
-└── LICENSE 
 
 
 ## Créditos
