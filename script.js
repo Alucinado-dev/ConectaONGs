@@ -40,5 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
   buttonEntidades.forEach(button => {
     button.addEventListener('click', showEntidades);
   });
-});
 
+  const buttonNav = document.querySelector('.btn-nav');
+  buttonNav.addEventListener('click', () =>{
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+      mobileMenu.style.display = 'flex';
+    } else {
+      mobileMenu.style.display = 'none';
+    }
+  });
+});

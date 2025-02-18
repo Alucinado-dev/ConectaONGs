@@ -8,7 +8,78 @@
 
 @media screen and (max-width: 768px) {
     :root{
-        font-size: 32.5% ; 
+        font-size: 45% ; 
     }
     
+    header nav ul{
+        gap: 2rem;
+    }
+
+    #entidades{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #entidades .lista-entidades{
+        width: 50%;
+    }
+
+    #entidades .explicacao-entidades{
+        font-size: 1.2em;
+    }
+
+    #nova-ong{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #nova-ong figure{
+        border-radius: 1rem;
+        width: auto;
+    }
+    
+    #categorias{
+        padding: 12rem;
+    }
+    #categorias .lista-categorias{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    header nav > ul, header nav > a{
+        display: none;
+    }
+    
+    header nav .mobile-nav{
+        display: block;
+    }
+    
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 368px){
+    #entidades {
+        height: auto;
+    }
+
+    #entidades .lista-entidades .veja-entidades figure{
+        display: none;
+    }
 }
