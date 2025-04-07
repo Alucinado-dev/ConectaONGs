@@ -849,55 +849,82 @@ header .mobile-nav .mobile-menu ul{
 
 /*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   Rodapé    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     */
 
+:root{
+  --logo1: #FF00FF;
+  --logo2: #00FFFF;
+  --logo3: #0600ab;
+  --text-color-footer: #bacfdd;
+  --tech: "Share Tech Mono", monospace;
+  
+}
+
 footer{
-  background-color: var(--element-color);
-  font-size: 1.4rem;
-  padding: 2.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 10rem;
+  padding: 1rem;
+  margin: auto;
+  gap: 20rem;
+  background-color: var(--element-color);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+
+footer .developed-by{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  color: var(--text-color-footer);
+  font-family: var(--tech);
 
 }
+
+footer .developed-by p{
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+
+
+footer .developed-by a{
+  font-weight: 900;
+  transition: all 200ms ease-in-out;
+  color: var(--text-color-footer);
+  
+  &::before{
+      content: '</ALUCINADO>';
+  }
+
+  &:hover, &:focus{
+      font-family: var(--tech);
+      background-image: linear-gradient(180deg,var(--logo1) 30%,  var(--logo2) 70%);
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0px 0px 10px var(--logo3);
+  }
+}
+
+footer .developed-by img{
+  width: 35px;
+  height: 35px;
+}
+  
+  
 
 footer .creditos{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  
   gap: 1rem;
   align-items: flex-start;
   padding: 1rem;
-
-}
-
-footer .minhas-redes{
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 3rem;
-}
-
-footer .minhas-redes .icones-redes{
-  display: flex;
-  justify-content: space-evenly;
-  gap: 2rem;
-
-}
-
-footer .minhas-redes .icones-redes a{
-  font-size: 4em;
-  color: var(--main-color);
-  border-radius: 1rem;
-
-
-  transition: all var(--transition);
-
-  &:hover, &:focus{
-    outline: none;
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 10px var(--secondary-color)) ;
-  }
-
 
 }

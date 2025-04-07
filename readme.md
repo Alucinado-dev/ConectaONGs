@@ -39,11 +39,6 @@ https://conecta-ongs-orcin.vercel.app/
 Professor: Felipe Cabral
 Desenvolvedor: Lucino De Campos
 
-## Contato
-
-LinkedIn: [Lucino De Campos](https://www.linkedin.com/in/lucino-de-campos/)
-GitHub: [ALucin4do](https://github.com/ALucin4do/)
-Instagram: [Lucino De Campos](https://www.instagram.com/lucino_de_campos/)
 
 ## Licença
 
